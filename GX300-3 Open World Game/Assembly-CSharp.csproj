@@ -54,7 +54,9 @@
      <Compile Include="Assets\_Project\Scripts\CameraController.cs" />
      <Compile Include="Assets\_Project\Scripts\InventoryDisplay.cs" />
      <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\FishObject.cs" />
+     <Compile Include="Assets\_Project\Scripts\SaveLoadManager.cs" />
      <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\FoodObject.cs" />
+     <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Database\ItemDatabaseObject.cs" />
      <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Inventory\Scripts\InventoryObject.cs" />
      <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\ItemObject.cs" />
      <Folder Include="Assets" />
@@ -80,6 +82,7 @@
      <Folder Include="Assets\Free Island Collection\Environment\Terrain\Terrains" />
      <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Database" />
      <Folder Include="Assets\TextMesh Pro" />
      <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures\Dirt_1" />
      <Folder Include="Assets\Free Island Collection\Post Processing" />
@@ -109,6 +112,7 @@
      <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures\Grass_2" />
      <Folder Include="Assets\PlayerPrefsEditor" />
      <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Fish\Raw" />
+     <Folder Include="Assets\_Project\Resources" />
      <Folder Include="Assets\PlayerPrefsEditor\Documentation" />
      <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Resources" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
@@ -383,10 +387,10 @@
      <HintPath>D:\Everything GX\UnityEditor\2022.3.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>D:\Everything GX\UnityEditor\2022.3.4f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -755,79 +759,79 @@
      <HintPath>D:\Everything GX\UnityEditor\2022.3.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InputSystem">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InputSystem.ForUI">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

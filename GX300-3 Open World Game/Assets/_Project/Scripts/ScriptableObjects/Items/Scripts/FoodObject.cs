@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum FoodType{
+//BLUEPRINT BEHIND ALL THE FOOD OBJECTS
+
+public enum FoodType{ //Type of the food (if it's a fish or a gruit)
     Fruit,
     Fish
 }

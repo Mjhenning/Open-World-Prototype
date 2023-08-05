@@ -18,12 +18,18 @@ public class PlayerController : MonoBehaviour {
 
     public bool isGrounded;
     public bool isJumping;
+    
+    public Vector3 currenPlayerPos;
 
     public Player_Input input; //used to access player_input actionmap
     
     void Awake () {
         instance = this;
         input = new Player_Input ();
+    }
+
+    public void CallOnLoad () {
+        transform.position = currenPlayerPos;
     }
     
 
@@ -51,6 +57,8 @@ public class PlayerController : MonoBehaviour {
 
     void Update () {
 
+        currenPlayerPos = transform.position;
+        
         isGrounded = Physics.Raycast(CameraController.instance.transform.position, Vector3.down, 11f, groundMask);
         Debug.DrawRay(CameraController.instance.transform.position, Vector3.down * 11f, Color.red);
         
@@ -63,6 +71,15 @@ public class PlayerController : MonoBehaviour {
         if (!isGrounded && isJumping) {
             isGrounded = false;
             rb.AddForce(Vector3.down * DownForce, ForceMode.Force);
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.K)) {
+            SaveLoadManager.instance.SaveGame (0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.L)) {
+            SaveLoadManager.instance.LoadGame (0);
         }
         
     }

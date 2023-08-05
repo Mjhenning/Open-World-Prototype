@@ -145,7 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 682909697635393807}
   - component: {fileID: 4434369584261714801}
-  - component: {fileID: 8641017746005494156}
+  - component: {fileID: 9214030182402175168}
   m_Layer: 5
   m_Name: ItemSlot_Tool
   m_TagString: Untagged
@@ -182,7 +182,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5164457322298867253}
   m_CullTransparentMesh: 1
---- !u!114 &8641017746005494156
+--- !u!114 &9214030182402175168
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
+  m_Color: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

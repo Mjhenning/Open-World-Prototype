@@ -11,9 +11,16 @@ public class CameraController : MonoBehaviour {
     public float height = 10f;
     
     Quaternion currentRotation;
+
+    [SerializeField] public Quaternion CurrentPlayerViewRotation;
     void Awake () {
         instance = this;
     }
+
+    public void CallOnLoad () {
+        currentRotation = CurrentPlayerViewRotation;
+    }
+    
     void Start () {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -33,6 +40,8 @@ public class CameraController : MonoBehaviour {
             Quaternion rotation = Quaternion.Euler(-currentRotation.y, currentRotation.x, 0f);
             transform.rotation = rotation;
             player.rotation = Quaternion.Euler (0, currentRotation.x, 0);
+
+            CurrentPlayerViewRotation = currentRotation;
         }
         Vector3 position = player.position; //Allows the camera to move around accordingly to player movement.
         position.y = player.position.y + height; //Allows camera to be the correct height instead of player's feat

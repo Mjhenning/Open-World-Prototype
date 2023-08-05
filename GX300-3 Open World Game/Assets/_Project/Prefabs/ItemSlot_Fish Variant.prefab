@@ -94,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5164457322298867253, guid: 3241a221b8a2fde4f816443a8a2e77a2, type: 3}
       propertyPath: m_Name
-      value: ItemSlot_Fruit Variant 1
+      value: ItemSlot_Fish Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8641017746005494156, guid: 3241a221b8a2fde4f816443a8a2e77a2, type: 3}
       propertyPath: m_Color.b
@@ -107,6 +107,18 @@ PrefabInstance:
     - target: {fileID: 8641017746005494156, guid: 3241a221b8a2fde4f816443a8a2e77a2, type: 3}
       propertyPath: m_Color.r
       value: 0.023529418
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214030182402175168, guid: 3241a221b8a2fde4f816443a8a2e77a2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5566038
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214030182402175168, guid: 3241a221b8a2fde4f816443a8a2e77a2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.01642632
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214030182402175168, guid: 3241a221b8a2fde4f816443a8a2e77a2, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
