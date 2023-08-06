@@ -33,15 +33,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Wheel",
-                    "type": "Button",
-                    "id": "937bb0be-02a1-4924-8567-b2644675dedf",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Interact",
                     "type": "Button",
                     "id": "b9985777-6288-4063-bf4a-a3bdcc7bc8cb",
@@ -190,28 +181,6 @@
                     "processors": "ScaleVector2(x=0.15,y=0.15)",
                     "groups": "Keyboard",
                     "action": "LookAround",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "e8e3a5c8-775f-4fa0-9e4b-d68e92e47690",
-                    "path": "<Keyboard>/tab",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Wheel",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "bb3df097-58fb-47a2-b6ee-a3819cfd6bc7",
-                    "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Controller",
-                    "action": "Wheel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

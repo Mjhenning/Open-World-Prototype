@@ -46,15 +46,16 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\ToolsObject.cs" />
-     <Compile Include="Assets\_Project\Scripts\PlayerController.cs" />
      <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\FruitObject.cs" />
      <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\ResourceObject.cs" />
-     <Compile Include="Assets\_Project\Scripts\Item.cs" />
+     <Compile Include="Assets\_Project\Scripts\Bacgkround_Systems\SaveLoadManager.cs" />
      <Compile Include="Assets\_Project\Input\Player_Input.cs" />
-     <Compile Include="Assets\_Project\Scripts\CameraController.cs" />
-     <Compile Include="Assets\_Project\Scripts\InventoryDisplay.cs" />
+     <Compile Include="Assets\_Project\Scripts\Inventory\InventoryDisplay.cs" />
+     <Compile Include="Assets\_Project\Scripts\Player\Pickup.cs" />
+     <Compile Include="Assets\_Project\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\FishObject.cs" />
-     <Compile Include="Assets\_Project\Scripts\SaveLoadManager.cs" />
+     <Compile Include="Assets\_Project\Scripts\Player\CameraController.cs" />
+     <Compile Include="Assets\_Project\Scripts\Items\Item.cs" />
      <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\FoodObject.cs" />
      <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Database\ItemDatabaseObject.cs" />
      <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Inventory\Scripts\InventoryObject.cs" />
@@ -66,6 +67,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Fruit\Cooked" />
      <Folder Include="Assets\TextMesh Pro\Sprites" />
+     <Folder Include="Assets\_Project\Scripts\Inventory" />
      <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
      <Folder Include="Assets\Free Island Collection" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -83,6 +85,7 @@
      <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Database" />
+     <Folder Include="Assets\_Project\Scripts\Bacgkround_Systems" />
      <Folder Include="Assets\TextMesh Pro" />
      <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures\Dirt_1" />
      <Folder Include="Assets\Free Island Collection\Post Processing" />
@@ -109,7 +112,9 @@
      <Folder Include="Assets\PlayerPrefsEditor\Documentation\Images" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Fruit\Sliced" />
+     <Folder Include="Assets\_Project\Scripts\Items" />
      <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures\Grass_2" />
+     <Folder Include="Assets\_Project\Scripts\Player" />
      <Folder Include="Assets\PlayerPrefsEditor" />
      <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Fish\Raw" />
      <Folder Include="Assets\_Project\Resources" />
