@@ -15,7 +15,4 @@ public class FoodObject : ItemObject {
     public int RestoreSaturationValue;
     public FoodType foodType;
     
-    public void Awake () {
-        type = ItemType.Food;
-    }
 }

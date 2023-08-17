@@ -7,7 +7,6 @@ using UnityEngine;
 
 public class FishObject : FoodObject
 {
-
     public void Awake () {
         foodType = FoodType.Fish;
     }

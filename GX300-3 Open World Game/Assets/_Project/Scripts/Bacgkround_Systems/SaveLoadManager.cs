@@ -73,6 +73,7 @@ public class SaveLoadManager : MonoBehaviour {
             CameraController.instance.CallOnLoad ();
             
             PlayerController.instance.Inventory.Load ();
+            PlayerController.instance.Hotbar.Load ();
         }
     }
 
@@ -100,6 +101,7 @@ public class SaveLoadManager : MonoBehaviour {
         tempSaveData[Saveslot].playerInfo.PlayerRotation = CameraController.instance.CurrentPlayerViewRotation;
 
         PlayerController.instance.Inventory.Save ();
+        PlayerController.instance.Hotbar.Save ();
 
         //Screenshot Save
         

@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38771001ca84f564c9ae26e01c3824fd, type: 3}
   m_Name: Rock
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5164457322298867253, guid: 3241a221b8a2fde4f816443a8a2e77a2, type: 3}
+  uiDisplay: {fileID: 959871119, guid: 09b1c72df0cc7eb4a8105fb004311699, type: 3}
+  Stackable: 1
+  groundItem: {fileID: 100000, guid: 532788c369e551d44a067aa3c8bb182c, type: 3}
   type: 2
   state: 0
   description: A single rock. Can be used to start fires or to craft a axe
+  data:
+    Name: Rock
+    Id: 2
   Tool: 1

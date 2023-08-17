@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de48724da4ab6744c86e994cc24f295f, type: 3}
   m_Name: Axe
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5164457322298867253, guid: 3241a221b8a2fde4f816443a8a2e77a2, type: 3}
+  uiDisplay: {fileID: 2003374741, guid: d5b3f7c2b3e0c9341bbdabe17a3497e2, type: 3}
+  groundItem: {fileID: 0}
   type: 1
   state: 0
   description: A basic handmade tool used to chop down trees.
+  data:
+    Name: Axe
+    Id: 0

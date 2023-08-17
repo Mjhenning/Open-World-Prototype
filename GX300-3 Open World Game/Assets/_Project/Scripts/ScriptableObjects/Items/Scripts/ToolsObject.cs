@@ -8,7 +8,4 @@ using UnityEngine;
 
 public class ToolsObject : ItemObject
 {
-    public void Awake () {
-        type = ItemType.Tool;
-    }
 }

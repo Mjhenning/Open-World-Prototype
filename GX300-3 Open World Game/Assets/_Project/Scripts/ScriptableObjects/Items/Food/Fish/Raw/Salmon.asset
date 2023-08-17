@@ -12,11 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f6c7a63c16fde46bc1945e963fd73c, type: 3}
   m_Name: Salmon
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8838437396887002890, guid: d6f3011dd4622b64a80074c2204107a5, type: 3}
+  uiDisplay: {fileID: -715604091, guid: e631c1fbef4826e4886b69c65c23cae9, type: 3}
+  Stackable: 1
+  groundItem: {fileID: 0}
   type: 0
   state: 0
-  description: A pink fish caught from a nearby watersource. -15 Health points and
+  description: A pink fish caught from a nearby watersource. -2 Health points and
     +3 saturation on use.
-  RestoreHealthValue: -15
+  data:
+    Name: Salmon
+    Id: 0
+  RestoreHealthValue: -2
   RestoreSaturationValue: 3
   foodType: 1

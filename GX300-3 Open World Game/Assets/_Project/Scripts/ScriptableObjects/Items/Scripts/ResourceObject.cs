@@ -8,8 +8,4 @@ using UnityEngine;
 
 public class ResourceObject : ItemObject {
     public bool Tool;
-    
-    public void Awake () {
-        type = ItemType.Resources;
-    }
 }

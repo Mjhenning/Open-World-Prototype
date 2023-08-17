@@ -5,33 +5,83 @@ using System.IO;
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEditor;
+using UnityEngine.Serialization;
+using UnityEngine.UIElements;
 
 [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
-public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver { //script for the inventory
+public class InventoryObject : ScriptableObject { //script for the inventory
 
     public string savePath;
-    ItemDatabaseObject database;
-    
-    public List<InventorySlot> Container = new List<InventorySlot> (); //holds a list of the inventory slots with their items and the amount of their items
+    public ItemDatabaseObject database;
 
-    void OnEnable () {
-#if UNITY_EDITOR //Do below if in unity editor (because of serialization issues)
-        database = (ItemDatabaseObject) AssetDatabase.LoadAssetAtPath ("Assets/_Project/Resources/Database.asset", typeof(ItemDatabaseObject)); //used to load from the database made instead of overwriting it each time
-#else //else load from resources folder
-        database = Resources.Load<ItemDatabaseObject> ("Database");
-#endif
+    public Inventory Container; //holds a list of the inventory slots with their items and the amount of their items
+    public InventorySlot[] GetSlots { get { return Container.Slots; } } //used to grab all Slots on inventory
+
+
+    public bool AddItem (Item _item, int _amount) {
+        //Check if a stack already exists.
+        InventorySlot slot = FindItemOnInventory(_item);
+        if(slot != null && database.GetItem[_item.Id].Stackable){
+            slot.addAmount(_amount);
+            return true;
+        }
+        if(EmptySlotCount > 0){
+            //Place in first empty slot.
+            SetEmptySlot(_item, _amount);
+            return true;
+        }
+        else{
+            //No way to add item.
+            return false;
+        }
     }
 
-    public void AddItem (ItemObject _item, int _amount) {
-        
-        for (int i = 0; i < Container.Count; i++) {
-            
-            if (Container[i].item == _item) { // if item exist increase it's amount
-                Container[i].addAmount (_amount);
-                return; //and return
+    public int EmptySlotCount{ //retrieves the amount of empty slots in invetory
+        get
+        {
+            int counter = 0;
+            for (int i = 0; i < GetSlots.Length; i++) {
+                if (GetSlots[i].item.Id <= -1) {
+                    counter++;
+                }
+            }
+            return counter;
+        }
+    }
+
+    public InventorySlot FindItemOnInventory (Item _item) { //checks if slot id matches picked up item id
+        for (int i = 0; i < GetSlots.Length; i++) {
+            if (GetSlots[i].item.Id == _item.Id) {
+                return GetSlots[i];
             }
         }
-        Container.Add (new InventorySlot (database.GetID[_item],_item, _amount)); //else run this code
+
+        return null;
+    }
+
+    public InventorySlot SetEmptySlot (Item _item, int _amount) {
+        for (int i = 0; i < GetSlots.Length; i++) {
+            if (GetSlots[i].item.Id <= -1) {
+                GetSlots[i].UpdateSlot (_item, _amount);
+                return GetSlots[i];
+            } 
+        }
+        //set up functionality for full inventory
+        return null;
+    }
+
+    public void SwapItems (InventorySlot item1, InventorySlot item2) {
+         InventorySlot temp = new InventorySlot (item2.item, item2.itemamount);
+         item2.UpdateSlot (item1.item, item1.itemamount);
+         item1.UpdateSlot (temp.item, temp.itemamount);
+    }
+
+    public void RemoveItem (Item _item) {
+        for (int i = 0; i < GetSlots.Length; i++) {
+            if (GetSlots[i].item == _item) {
+                GetSlots[i].UpdateSlot (null, 0);
+            }
+        }
     }
 
     public void Save () { //Save inventory from json file
@@ -47,33 +97,78 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver 
             BinaryFormatter bf = new BinaryFormatter ();
             FileStream file = File.Open (string.Concat (Application.persistentDataPath, savePath), FileMode.Open);
             JsonUtility.FromJsonOverwrite (bf.Deserialize (file).ToString (), this);
+            
+            for (int i = 0; i < GetSlots.Length; i++) { //force loads
+                GetSlots[i].UpdateSlot (GetSlots[i].item, GetSlots[i].itemamount);
+            }
             file.Close ();
-        }
-    }
-    public void OnBeforeSerialize () {
-    }
-
-    public void OnAfterDeserialize () { //as soon as anything changes on sciptable object so that unity has to change this object (such as scene reloads), we look through all the items and repopulate each slot
-        for (int i = 0; i < Container.Count; i++) {
-            Container[i].item = database.GetItem[Container[i].ID]; //adds items back
         }
     }
 }
 
+[System.Serializable]
+public class Inventory {
+    [FormerlySerializedAs ("Items")] public InventorySlot[] Slots = new InventorySlot[49];
+
+    public void Clear () {
+        for (int i = 0; i < Slots.Length; i++) {
+            Slots[i].RemoveItem ();
+        }
+    }
+
+}
+
     [System.Serializable]
     public class InventorySlot { //script for each slot within the in venotry
-
-        public int ID; //item ID
-        public ItemObject item; //Item identifier
+        [System.NonSerialized] //stops this from opening in editor and stops system from trying to save this object
+        public Player_Inventory_Interface parentInventroy;
+        [System.NonSerialized]
+        public GameObject slotDisplay;
+        [System.NonSerialized]
+        public SlotUpdated OnAfterUpdate;
+        [System.NonSerialized]
+        public SlotUpdated OnBeforeUpdate;
+        
+        public Item item; //Item identifier
         public int itemamount; //amount of this item
 
-        public InventorySlot (int _id,ItemObject _item, int _amount) { //received item = slot item % recieved amount = amount of item in slot
-            ID = _id;
+        public ItemObject itemobject { //makes it a public accesible with only a readonly
+            get    
+            {
+                if (item.Id >= 0) {
+                    return parentInventroy.inventory.database.GetItem[item.Id];
+                }
+
+                return null;
+            }
+        }
+
+        public delegate void SlotUpdated (InventorySlot _slot); //used to update slots (used to pass methods/arguments to other methods)
+        
+        public InventorySlot () { //received item = slot item % recieved amount = amount of item in slot
+            UpdateSlot (new Item (), 0);
+        }
+        public InventorySlot (Item _item, int _amount) { //received item = slot item % recieved amount = amount of item in slot
+            UpdateSlot (_item, _amount);
+        }
+        
+        public void UpdateSlot (Item _item, int _amount) { //received item = slot item % recieved amount = amount of item in slot
+            if (OnBeforeUpdate != null) {
+                OnBeforeUpdate.Invoke (this);
+            }
             item = _item;
             itemamount = _amount;
+
+            if (OnAfterUpdate != null) {
+                OnAfterUpdate.Invoke (this);
+            }
+        }
+
+        public void RemoveItem () {
+            UpdateSlot (new Item (), 0);
         }
 
         public void addAmount (int value) { //adds 1 amount of the item to the inventory
-            itemamount += value;
+            UpdateSlot (item, itemamount += value);
         }
 }
