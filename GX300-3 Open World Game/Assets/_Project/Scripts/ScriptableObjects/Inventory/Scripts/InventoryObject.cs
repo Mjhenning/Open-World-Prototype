@@ -18,7 +18,7 @@ public class InventoryObject : ScriptableObject { //script for the inventory
     public InventorySlot[] GetSlots { get { return Container.Slots; } } //used to grab all Slots on inventory
 
 
-    public bool AddItem (Item _item, int _amount) {
+    public bool AddItem (Item _item, int _amount) { //used to add items to the inventory
         //Check if a stack already exists.
         InventorySlot slot = FindItemOnInventory(_item);
         if(slot != null && database.GetItem[_item.Id].Stackable){
@@ -59,7 +59,7 @@ public class InventoryObject : ScriptableObject { //script for the inventory
         return null;
     }
 
-    public InventorySlot SetEmptySlot (Item _item, int _amount) {
+    public InventorySlot SetEmptySlot (Item _item, int _amount) { //used to set empty slots
         for (int i = 0; i < GetSlots.Length; i++) {
             if (GetSlots[i].item.Id <= -1) {
                 GetSlots[i].UpdateSlot (_item, _amount);
@@ -70,13 +70,13 @@ public class InventoryObject : ScriptableObject { //script for the inventory
         return null;
     }
 
-    public void SwapItems (InventorySlot item1, InventorySlot item2) {
+    public void SwapItems (InventorySlot item1, InventorySlot item2) { //used to swap item 1 with item 2
          InventorySlot temp = new InventorySlot (item2.item, item2.itemamount);
          item2.UpdateSlot (item1.item, item1.itemamount);
          item1.UpdateSlot (temp.item, temp.itemamount);
     }
 
-    public void RemoveItem (Item _item) {
+    public void RemoveItem (Item _item) { //used to completely delete an item from the inventory
         for (int i = 0; i < GetSlots.Length; i++) {
             if (GetSlots[i].item == _item) {
                 GetSlots[i].UpdateSlot (null, 0);
@@ -107,10 +107,10 @@ public class InventoryObject : ScriptableObject { //script for the inventory
 }
 
 [System.Serializable]
-public class Inventory {
+public class Inventory { //hold all the items with their data
     [FormerlySerializedAs ("Items")] public InventorySlot[] Slots = new InventorySlot[49];
 
-    public void Clear () {
+    public void Clear () { //used to clear inventory
         for (int i = 0; i < Slots.Length; i++) {
             Slots[i].RemoveItem ();
         }
@@ -164,7 +164,7 @@ public class Inventory {
             }
         }
 
-        public void RemoveItem () {
+        public void RemoveItem () { //deletes the item
             UpdateSlot (new Item (), 0);
         }
 

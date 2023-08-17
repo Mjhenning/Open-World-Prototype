@@ -7,9 +7,9 @@ public class Dynamic_Player_Interface : Player_Inventory_Interface
 {
     public GameObject inventoryPrefab;
     
+    [Header("UI layout specifics")]
     public int x_strt;
     public int y_strt;
-    
     public int x_gap;
     public int Num_Of_Columns;
     public int y_gap;
@@ -26,7 +26,7 @@ public class Dynamic_Player_Interface : Player_Inventory_Interface
             AddEvent (obj, EventTriggerType.EndDrag, delegate { OnDragEnd (obj); });
             AddEvent (obj, EventTriggerType.Drag, delegate { OnDrag (obj); });
             
-            inventory.GetSlots[i].slotDisplay = obj;
+            inventory.GetSlots[i].slotDisplay = obj; //
             
             DisplayedSlots.Add (obj, inventory.GetSlots[i]);
         }

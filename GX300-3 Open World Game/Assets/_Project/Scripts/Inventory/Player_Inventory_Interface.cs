@@ -57,18 +57,18 @@ public abstract class Player_Inventory_Interface : MonoBehaviour {
     }
 
     public void OnEnter (GameObject obj) {
-        MouseData.slotHoveredOver = obj;
+        MouseData.slotHoveredOver = obj; //adds object hovered over to the mousedata
     }
     
     public void OnExit (GameObject obj) {
-        MouseData.slotHoveredOver = null;
+        MouseData.slotHoveredOver = null; //remove object hovered over to the mousedata
     }
     
     public void OnEnterInterface (GameObject obj) { //put in place to stop the item from being deleted when inside interface
         MouseData.InterfaceUnderMouse = obj.GetComponent<Player_Inventory_Interface> ();
     }
     
-    public void OnExitInterface (GameObject obj) {
+    public void OnExitInterface (GameObject obj) { //tels mousedata that 
         MouseData.InterfaceUnderMouse  = null;
     }
     
@@ -98,19 +98,19 @@ public abstract class Player_Inventory_Interface : MonoBehaviour {
         
         Destroy(MouseData.tempItemDrag); //destroy the item picked up by mouse
 
-        if (MouseData.InterfaceUnderMouse == null) {
+        if (MouseData.InterfaceUnderMouse == null) { //if no interface under object delete the object
             DisplayedSlots[obj].RemoveItem ();
             return;
         }
 
-        if (MouseData.slotHoveredOver) {
+        if (MouseData.slotHoveredOver) { //if mouse is currently hovering over an item and drag stops
             InventorySlot mouseHoverSlotData = MouseData.InterfaceUnderMouse.DisplayedSlots[MouseData.slotHoveredOver];
             inventory.SwapItems (DisplayedSlots[obj], mouseHoverSlotData);
         }
 
         HotbarManager.instance.UpdateSelectedSlot (); //just to update slot 0 on hotbar if item is dropped in there
     }
-    public void OnDrag (GameObject obj) {
+    public void OnDrag (GameObject obj) { //change item sprite position to mouse pos
         if (MouseData.tempItemDrag != null) {
             MouseData.tempItemDrag.GetComponent<RectTransform> ().position = Input.mousePosition; //follow mouse
         }
@@ -119,7 +119,7 @@ public abstract class Player_Inventory_Interface : MonoBehaviour {
     
 }
 
-    public static class MouseData { //class that stores the ob in the inventory and the item currently being dragged
+    public static class MouseData { //class that stores the obj in the inventory and the item currently being dragged
         public static Player_Inventory_Interface InterfaceUnderMouse;
         public static GameObject tempItemDrag;
         public static GameObject slotHoveredOver;

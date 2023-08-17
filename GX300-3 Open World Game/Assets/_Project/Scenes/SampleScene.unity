@@ -464,9 +464,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HotbarInventory: {fileID: 11400000, guid: 9754cfc38c8c26048943b4de80544376, type: 2}
+  HotbarSlots: []
   selectedItemId: 0
   CurrentSlot: 0
-  HotbarSlots: []
   HeldItem: {fileID: 1540106392}
 --- !u!1 &795556335
 GameObject:
@@ -2226,11 +2226,11 @@ MonoBehaviour:
   speed: 3
   jumpforce: 500
   DownForce: 2
+  isGrounded: 0
+  isJumping: 0
   groundMask:
     serializedVersion: 2
     m_Bits: 8
-  isGrounded: 0
-  isJumping: 0
   currenPlayerPos: {x: 0, y: 0, z: 0}
 --- !u!4 &1606504904
 Transform:

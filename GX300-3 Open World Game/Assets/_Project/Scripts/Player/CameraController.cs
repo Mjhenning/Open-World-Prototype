@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour {
+    
+    [Header("Player Specifics")]
     public static CameraController instance;
     public Transform player;
     public float sensitivity;
@@ -21,9 +23,9 @@ public class CameraController : MonoBehaviour {
         currentRotation = CurrentPlayerViewRotation;
     }
     
-    void Start () {
+    void Start () { //on start disable cursor and change lockstate
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked; //testing
+        Cursor.lockState = CursorLockMode.Locked; 
     }
     
     void LateUpdate() { //Used to follow player mouse position to determine rotation of first person view
@@ -49,7 +51,7 @@ public class CameraController : MonoBehaviour {
         transform.position = position; //Changes camera position
     }
     
-    void Update () {
+    void Update () { //used to update the sensitivity
              sensitivity = PlayerPrefs.GetFloat ("MouseSens", 1f);
     }
 }
