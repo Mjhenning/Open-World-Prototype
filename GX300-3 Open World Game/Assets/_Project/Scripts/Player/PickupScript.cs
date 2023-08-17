@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PickupScript : MonoBehaviour {
-
     public static PickupScript instance;
+    
+    public Transform DropPoint;
     [SerializeField] LayerMask itemMask;
 
     void Awake() {
@@ -32,6 +33,10 @@ public class PickupScript : MonoBehaviour {
                 }
             }
         }
+        
+    }
+
+    public void Drop () {
         
     }
 }

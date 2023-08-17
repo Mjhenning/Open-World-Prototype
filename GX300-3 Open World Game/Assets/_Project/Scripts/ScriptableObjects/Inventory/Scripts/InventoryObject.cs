@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
@@ -76,14 +77,14 @@ public class InventoryObject : ScriptableObject { //script for the inventory
          item1.UpdateSlot (temp.item, temp.itemamount);
     }
 
-    public void RemoveItem (Item _item) { //used to completely delete an item from the inventory
-        for (int i = 0; i < GetSlots.Length; i++) {
-            if (GetSlots[i].item == _item) {
-                GetSlots[i].UpdateSlot (null, 0);
-            }
-        }
-    }
-
+    // public void RemoveItem (Item _item) { //used to completely delete an item from the inventory
+    //     for (int i = 0; i < GetSlots.Length; i++) {
+    //         if (GetSlots[i].item == _item) {
+    //             GetSlots[i].UpdateSlot (null, 0);
+    //         }
+    //     }
+    // }
+    
     public void Save () { //Save inventory from json file
         string saveData = JsonUtility.ToJson (this, true);
         BinaryFormatter bf = new BinaryFormatter ();
@@ -119,7 +120,7 @@ public class Inventory { //hold all the items with their data
 }
 
     [System.Serializable]
-    public class InventorySlot { //script for each slot within the in venotry
+    public class InventorySlot { //script for each slot within the inventory
         [System.NonSerialized] //stops this from opening in editor and stops system from trying to save this object
         public Player_Inventory_Interface parentInventroy;
         [System.NonSerialized]
@@ -167,6 +168,7 @@ public class Inventory { //hold all the items with their data
         public void RemoveItem () { //deletes the item
             UpdateSlot (new Item (), 0);
         }
+        
 
         public void addAmount (int value) { //adds 1 amount of the item to the inventory
             UpdateSlot (item, itemamount += value);

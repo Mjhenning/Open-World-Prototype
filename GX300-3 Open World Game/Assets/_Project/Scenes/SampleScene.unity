@@ -1320,6 +1320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 939c2b05477c87a4d9cd19d9bde39195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DropPoint: {fileID: 0}
   itemMask:
     serializedVersion: 2
     m_Bits: 64
