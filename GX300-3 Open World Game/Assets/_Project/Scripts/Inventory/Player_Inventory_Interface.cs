@@ -99,7 +99,7 @@ public abstract class Player_Inventory_Interface : MonoBehaviour {
         Destroy(MouseData.tempItemDrag); //destroy the item picked up by mouse
 
         if (MouseData.InterfaceUnderMouse == null) { //if no interface under object delete the object
-            DisplayedSlots[obj].RemoveItem ();
+            DisplayedSlots[obj].DropItem ();
             return;
         }
 

@@ -36,7 +36,11 @@ public class PickupScript : MonoBehaviour {
         
     }
 
-    public void Drop () {
-        
+    public void Drop (ItemObject item) {  //used to set the dropped item properties and to actually drop the item infront of the player
+        GameObject _item = Instantiate (item.groundItem, DropPoint.position, Quaternion.identity);
+        Rigidbody itemrb = _item.AddComponent<Rigidbody> ();
+        itemrb.AddForce (0, 1, 1);
+        GroundItem droppedItem = _item.AddComponent<GroundItem> ();
+        droppedItem.item = item;
     }
 }

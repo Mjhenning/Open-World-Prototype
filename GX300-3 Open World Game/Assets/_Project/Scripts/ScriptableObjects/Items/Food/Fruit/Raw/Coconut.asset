@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: 430206670, guid: 09b1c72df0cc7eb4a8105fb004311699, type: 3}
   Stackable: 1
-  groundItem: {fileID: 100000, guid: 532788c369e551d44a067aa3c8bb182c, type: 3}
+  groundItem: {fileID: 128935683, guid: 8d931b3fb82717949a490ba2479926c4, type: 3}
   type: 0
   state: 0
   description: A brown ball, dropped on your head from a nearby tree. Restores +5
     heatlh & +10 Saturation on use.
   data:
     Name: Coconut
-    Id: 1
+    Id: 2
   RestoreHealthValue: 5
   RestoreSaturationValue: 10
   foodType: 0

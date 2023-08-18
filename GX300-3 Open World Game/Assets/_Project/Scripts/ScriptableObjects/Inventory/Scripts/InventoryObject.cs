@@ -173,4 +173,17 @@ public class Inventory { //hold all the items with their data
         public void addAmount (int value) { //adds 1 amount of the item to the inventory
             UpdateSlot (item, itemamount += value);
         }
-}
+
+        public void DropItem () { //drops the item
+            if (itemamount > 1) { //if it has more than 1 in the amount it decreases amount by 1 and drops the item
+                UpdateSlot (item, itemamount -= 1);
+                ItemObject droppeditem = parentInventroy.inventory.database.GetItem[item.Id];
+                PickupScript.instance.Drop (droppeditem);
+            } else { //if it's 1 or less the item gets dropped and destroyed out of the inventory
+                ItemObject droppeditem = parentInventroy.inventory.database.GetItem[item.Id];
+                PickupScript.instance.Drop (droppeditem);
+                RemoveItem ();
+            }
+
+        }
+    }
