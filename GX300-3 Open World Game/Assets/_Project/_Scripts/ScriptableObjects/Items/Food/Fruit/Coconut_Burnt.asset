@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754420e37a401ea4ab6539adb61a3fe4, type: 3}
+  m_Name: Coconut_Burnt
+  m_EditorClassIdentifier: 
+  uiDisplay: {fileID: -536303359, guid: 70eda96def9209348a2e02e371f914ae, type: 3}
+  Stackable: 1
+  Burnable: 1
+  groundItem: {fileID: 5705158636331418958, guid: cc7b6c5d5c5e404479128d4b1e78817d, type: 3}
+  type: 0
+  state: 2
+  description: A black charred ball, doesn't seem very health to eat. Restores -
+    20 Health and +2 saturation on use
+  data:
+    Name: Burnt Coconut
+    Id: 5
+  FoodRaw: {fileID: 11400000, guid: ee0c8f48ccbf19247bd0e8ae1ad5dbc3, type: 2}
+  FoodCooked: {fileID: 11400000, guid: 1ef44bf5e69ac474d984c68b013b383a, type: 2}
+  FoodBurnt: {fileID: 11400000}
+  RestoreHealthValue: -20
+  RestoreSaturationValue: 2

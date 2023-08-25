@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38771001ca84f564c9ae26e01c3824fd, type: 3}
+  m_Name: Burnt_Wood
+  m_EditorClassIdentifier: 
+  uiDisplay: {fileID: 1762303944, guid: 70eda96def9209348a2e02e371f914ae, type: 3}
+  Stackable: 1
+  Burnable: 1
+  groundItem: {fileID: 1493958779012120596, guid: baa819853f7679c4c852a4c34ced4e0c, type: 3}
+  type: 2
+  state: 2
+  description: A loose plank burnt pitch black.
+  data:
+    Name: Wood
+    Id: 7
+  ResourceRaw: {fileID: 11400000, guid: ffd0b0ac6d22b1944b42a533c817a618, type: 2}
+  ResourceBurnt: {fileID: 11400000}
+  Tool: 0

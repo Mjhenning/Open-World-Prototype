@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38771001ca84f564c9ae26e01c3824fd, type: 3}
+  m_Name: Burnt_Seaweed
+  m_EditorClassIdentifier: 
+  uiDisplay: {fileID: -1300196189, guid: 70eda96def9209348a2e02e371f914ae, type: 3}
+  Stackable: 1
+  Burnable: 1
+  groundItem: {fileID: 8903058273634794869, guid: bafa1669ff5bb9f45aefb7ee6a5970bb, type: 3}
+  type: 2
+  state: 2
+  description: A green dried out object burnt to a crisp.
+  data:
+    Name: Burnt_Seaweed
+    Id: 8
+  ResourceRaw: {fileID: 11400000, guid: b561028ed6b5d5442a72f39a8700cde5, type: 2}
+  ResourceBurnt: {fileID: 11400000}
+  Tool: 0

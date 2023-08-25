@@ -45,116 +45,169 @@
     <Analyzer Include="D:\Everything GX\UnityEditor\2022.3.4f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\ToolsObject.cs" />
-     <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\FruitObject.cs" />
-     <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\ResourceObject.cs" />
-     <Compile Include="Assets\_Project\Scripts\Player\PickupScript.cs" />
-     <Compile Include="Assets\_Project\Scripts\Bacgkround_Systems\SaveLoadManager.cs" />
+     <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Scripts\FishObject.cs" />
+     <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Scripts\ItemObject.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Inventory\Dynamic_Player_Interface.cs" />
+     <Compile Include="Assets\Island\Scripts\WaterScroller.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Player\Pickup_Interact.cs" />
+     <Compile Include="Assets\Island\Scripts\FixedTiling.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Environment\Destroyable_Obj.cs" />
+     <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Scripts\FruitObject.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Inventory\Player_Inventory_Interface.cs" />
      <Compile Include="Assets\_Project\Input\Player_Input.cs" />
-     <Compile Include="Assets\_Project\Scripts\Inventory\HotbarManager.cs" />
-     <Compile Include="Assets\_Project\Scripts\UI\UI_Manager.cs" />
-     <Compile Include="Assets\_Project\Scripts\Player\PlayerController.cs" />
-     <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\FishObject.cs" />
-     <Compile Include="Assets\_Project\Scripts\Items\GroundItem.cs" />
-     <Compile Include="Assets\_Project\Scripts\Inventory\Static_Player_Interface.cs" />
-     <Compile Include="Assets\_Project\Scripts\Player\CameraController.cs" />
-     <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\FoodObject.cs" />
-     <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Database\ItemDatabaseObject.cs" />
-     <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Inventory\Scripts\InventoryObject.cs" />
-     <Compile Include="Assets\_Project\Scripts\Inventory\Dynamic_Player_Interface.cs" />
-     <Compile Include="Assets\_Project\Scripts\Inventory\Player_Inventory_Interface.cs" />
-     <Compile Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts\ItemObject.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Environment\SwapTrees.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Inventory\Static_Player_Interface.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Inventory\HotbarManager.cs" />
+     <Compile Include="Assets\_Project\_Scripts\InteractableItems\Fire.cs" />
+     <Compile Include="Assets\_Project\_Scripts\InteractableItems\Crafting_Table.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Items\GroundItem.cs" />
+     <Compile Include="Assets\Piloto Studio\Readme\Scripts\ReadmeBehaviour.cs" />
+     <Compile Include="Assets\_Project\_Scripts\UI\UI_Manager.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Player\CameraController.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Inventory\CraftingManager.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Bacgkround_Systems\SaveLoadManager.cs" />
+     <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Inventory\Scripts\InventoryObject.cs" />
+     <Compile Include="Assets\Piloto Studio\Readme\Scripts\Readme.cs" />
+     <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Database\ItemDatabaseObject.cs" />
+     <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Scripts\ToolsObject.cs" />
+     <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Scripts\ResourceObject.cs" />
+     <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Scripts\FoodObject.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets\_Project\Textures\Axe" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <Folder Include="Assets\PlayerPrefsEditor\Samples" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Dish" />
+     <Folder Include="Assets\Island\Prefabs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Fruit\Cooked" />
      <Folder Include="Assets\TextMesh Pro\Sprites" />
-     <Folder Include="Assets\_Project\Scripts\Inventory" />
+     <Folder Include="Assets\Piloto Studio\Textures" />
+     <Folder Include="Assets\_Project\_Scripts\Inventory" />
      <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
-     <Folder Include="Assets\Free Island Collection" />
+     <Folder Include="Assets\Hovl Studio\Procedural fire\Materials" />
      <Folder Include="Assets\_Project\Mats" />
+     <Folder Include="Assets\laxer Assets\wood bridge\Collision Meshes\Materials" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items" />
+     <Folder Include="Assets\Island\Prefabs\Tree_a_Textures" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items" />
      <Folder Include="Assets\_Project\Scenes" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Inventory\Scripts" />
-     <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures\Cliff_1" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Inventory\Scripts" />
+     <Folder Include="Assets\Piloto Studio\Shaders" />
+     <None Include="Assets\Piloto Studio\Shaders\SimplyToon_Piloto\Simply Toon.shader" />
      <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
+     <Folder Include="Assets\_Project\Prefabs\Tools" />
+     <Folder Include="Assets\_Project\Textures\SimpleNatureAssets" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Fruit\Raw" />
+     <Folder Include="Assets\_Project\Mesh" />
+     <Folder Include="Assets\_Project\Textures\Planks" />
+     <Folder Include="Assets\_Project\Environment\Skies\Materials" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food" />
+     <Folder Include="Assets\Piloto Studio\Campfire And Torches Pack\Prefabs" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Food" />
      <Folder Include="Assets\TextMesh Pro\Resources" />
-     <Folder Include="Assets\Free Island Collection\Environment\Terrain\Terrains" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Scripts" />
+     <Folder Include="Assets\_Project\Textures\Table 2" />
+     <Folder Include="Assets\Piloto Studio\Shaders\SimplyToon_Piloto" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Scripts" />
+     <Folder Include="Assets\Island\Terrain" />
+     <Folder Include="Assets\Island\Meshes" />
+     <Folder Include="Assets\_Project\_Scripts\Environment" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Database" />
-     <Folder Include="Assets\_Project\Scripts\Bacgkround_Systems" />
+     <Folder Include="Assets\Hovl Studio\Procedural fire\Shaders" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Database" />
+     <Folder Include="Assets\_Project\_Scripts\Bacgkround_Systems" />
      <Folder Include="Assets\TextMesh Pro" />
-     <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures\Dirt_1" />
-     <Folder Include="Assets\Free Island Collection\Post Processing" />
-     <Folder Include="Assets\LowPoly Rocks\FBX\Stalagmites" />
+     <Folder Include="Assets\_Project\Prefabs\Inventories" />
+     <Folder Include="Assets\Piloto Studio\Materials" />
      <Folder Include="Assets\LowPoly Rocks\FBX\Ground" />
-     <Folder Include="Assets\Free Island Collection\Environment\Terrain" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects" />
-     <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures\Grass_1" />
+     <Folder Include="Assets\Hovl Studio\Procedural fire\URP and HDRP" />
+     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\UberShader_Alpha.shader" />
+     <Folder Include="Assets\Piloto Studio\Materials\Shared" />
+     <Folder Include="Assets\Piloto Studio" />
+     <Folder Include="Assets\Island\Prefabs\Tree_b_Textures" />
+     <Folder Include="Assets\Piloto Studio\Materials\Fire" />
+     <Folder Include="Assets\Island\Scripts" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects" />
+     <Folder Include="Assets\laxer Assets\wood bridge\Collision Meshes" />
+     <Folder Include="Assets\Island\Prefabs\Misc" />
+     <Folder Include="Assets\_Project\Textures" />
+     <Folder Include="Assets\Hovl Studio\Procedural fire\Textures" />
+     <Folder Include="Assets\Piloto Studio\Readme" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <Folder Include="Assets\laxer Assets" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <Folder Include="Assets\Island\Standard" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <Folder Include="Assets\Piloto Studio\Shaders\Functions_Piloto" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-     <Folder Include="Assets\Free Island Collection\Environment\Grass" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Inventory" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Inventory" />
+     <Folder Include="Assets\_Project\Prefabs\Trees" />
      <Folder Include="Assets\_Project\Prefabs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <Folder Include="Assets\laxer Assets\wood bridge\Models" />
+     <Folder Include="Assets\Piloto Studio\Readme\Scripts" />
+     <Folder Include="Assets\laxer Assets\wood bridge\Models\Materials" />
      <Folder Include="Assets\LowPoly Rocks" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Fish\Sliced" />
-     <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures\Sand" />
+     <Folder Include="Assets\Hovl Studio" />
+     <Folder Include="Assets\_Project\_Scripts\InteractableItems" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\UberFX.shader" />
+     <Folder Include="Assets\Piloto Studio\Campfire And Torches Pack" />
      <Folder Include="Assets\TextMesh Pro\Shaders" />
+     <Folder Include="Assets\Piloto Studio\Models" />
+     <Folder Include="Assets\_Project\Prefabs\Fruits" />
      <Folder Include="Assets\LowPoly Rocks\FBX" />
-     <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures\Mossy_Rock" />
+     <Folder Include="Assets\laxer Assets\wood bridge\Prefabs with collision" />
      <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
      <Folder Include="Assets\TextMesh Pro\Fonts" />
+     <Folder Include="Assets\Hovl Studio\Procedural fire\Prefabs" />
+     <Folder Include="Assets\Island\Textures\_TerrainAutoUpgrade" />
      <Folder Include="Assets\PlayerPrefsEditor\Documentation\Images" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Fruit\Sliced" />
-     <Folder Include="Assets\_Project\Scripts\Items" />
-     <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures\Grass_2" />
-     <Folder Include="Assets\_Project\Scripts\Player" />
+     <Folder Include="Assets\_Project\_Scripts\Items" />
+     <Folder Include="Assets\_Project\Prefabs\Resources" />
+     <Folder Include="Assets\laxer Assets\wood bridge\Textures" />
+     <Folder Include="Assets\_Project\_Scripts\Player" />
      <Folder Include="Assets\PlayerPrefsEditor" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Fish\Raw" />
-     <Folder Include="Assets\LowPoly Rocks\Scenes" />
+     <Folder Include="Assets\Island\Textures\Materials" />
+     <Folder Include="Assets\Hovl Studio\Procedural fire" />
      <Folder Include="Assets\_Project\Resources" />
      <Folder Include="Assets\PlayerPrefsEditor\Documentation" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Resources" />
+     <Folder Include="Assets\_Project\Textures\Table 2\HDRP URP" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Resources" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Fish" />
-     <Folder Include="Assets\Free Island Collection\Environment" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Food\Fish" />
+     <Folder Include="Assets\laxer Assets\wood bridge\Materials" />
+     <Folder Include="Assets\_Project\Environment" />
+     <None Include="Assets\Hovl Studio\Procedural fire\Shaders\FireSphere.shader" />
+     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\UberShader_Additive.shader" />
      <Folder Include="Assets\_Project\Input" />
+     <Folder Include="Assets\_Project\Models" />
      <Folder Include="Assets\_Project" />
      <Folder Include="Assets\_Project\Sprites" />
-     <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures\Dirt_2" />
-     <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures" />
+     <Folder Include="Assets\Island\Textures" />
+     <None Include="Assets\Piloto Studio\Shaders\PBR_Piloto\PBR_UberShader.shader" />
+     <None Include="Assets\Piloto Studio\Shaders\README.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Fruit" />
+     <Folder Include="Assets\Island" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Food\Fruit" />
+     <Folder Include="Assets\Piloto Studio\Shaders\PBR_Piloto" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-     <Folder Include="Assets\Free Island Collection\Environment\Skies" />
-     <Folder Include="Assets\_Project\Scripts" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Food\Fish\Cooked" />
+     <Folder Include="Assets\_Project\Environment\Skies" />
+     <Folder Include="Assets\_Project\_Scripts" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <Folder Include="Assets\laxer Assets\wood bridge" />
      <Folder Include="Assets\TextMesh Pro\Documentation" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <Folder Include="Assets\Free Island Collection\Environment\Terrain\Textures\Cliff_2" />
-     <Folder Include="Assets\_TerrainAutoUpgrade" />
-     <Folder Include="Assets\Free Island Collection\Scenes" />
-     <Folder Include="Assets\_Project\Scripts\ScriptableObjects\Items\Tools" />
-     <Folder Include="Assets\_Project\Scripts\UI" />
+     <Folder Include="Assets\Piloto Studio\Campfire And Torches Pack\Models" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Tools" />
+     <Folder Include="Assets\_Project\_Scripts\UI" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
+     <Folder Include="Assets\Island\URP" />
+     <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\Screenspace_Alpha.shader" />
+     <None Include="Assets\Island\Readme FIRST!.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-     <Folder Include="Assets\LowPoly Rocks\Prefabs" />
+     <Folder Include="Assets\Piloto Studio\Shaders\VFX_Piloto" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Everything GX\UnityEditor\2022.3.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -776,8 +829,23 @@
      <Reference Include="System.Xml.Serialization">
      <HintPath>D:\Everything GX\UnityEditor\2022.3.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.Runtime">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Editor">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
@@ -788,6 +856,9 @@
      <Reference Include="Unity.VisualScripting.Shared.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.ShaderGraph.Editor">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
@@ -797,23 +868,32 @@
      <Reference Include="Unity.VisualScripting.Core">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEngine.UI">
-     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="UnityEngine.UI">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.2D.Sprite.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.Editor">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics.Editor">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -833,6 +913,9 @@
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
@@ -842,17 +925,32 @@
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="PPv2URPConverters">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.TextMeshPro">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Searcher.Editor">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Editor">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

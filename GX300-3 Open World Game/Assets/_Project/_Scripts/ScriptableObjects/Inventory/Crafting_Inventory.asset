@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0555c9a4946db60419b0ff6712d759b9, type: 3}
+  m_Name: Crafting_Inventory
+  m_EditorClassIdentifier: 
+  savePath: /CraftingInventory.data
+  database: {fileID: 11400000, guid: 36d24fe81d02070479827bc003ee698f, type: 2}
+  Container:
+    Slots:
+    - item:
+        Name: 
+        Id: -1
+      itemamount: 0
+    - item:
+        Name: 
+        Id: -1
+      itemamount: 0
+    - item:
+        Name: 
+        Id: -1
+      itemamount: 0
+    - item:
+        Name: 
+        Id: -1
+      itemamount: 0
