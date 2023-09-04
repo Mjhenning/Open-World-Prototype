@@ -10,12 +10,11 @@ public class Respawn_Manager: MonoBehaviour {
         instance = this;
     }
 
-    public void RespawnTree (GameObject tree, float Time) {
-        StartCoroutine (Respawn (tree, Time));
-        tree.GetComponent<Destroyable_Obj> ().hit_amount = 0;
+    public void RespawnObj (GameObject go, float Time) {
+        StartCoroutine (Respawn (go, Time));
     }
 
-    IEnumerator Respawn (GameObject go,float Time) {
+    IEnumerator Respawn (GameObject go,float Time) { //respawns whatever go after whatever given time 
         yield return new WaitForSeconds (Time);
         go.SetActive (true);
     }

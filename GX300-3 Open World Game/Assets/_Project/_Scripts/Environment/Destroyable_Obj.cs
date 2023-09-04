@@ -8,7 +8,8 @@ public class Destroyable_Obj : MonoBehaviour {
     public int hit_amount = 0;
     
     public void DestroyObj () { //when destroyed deactivates gameobject and for both drop points spawn their appropriate items 3 times
-        Respawn_Manager.instance.RespawnTree (gameObject, 5f);
+        Respawn_Manager.instance.RespawnObj (gameObject, 60f);
+        hit_amount = 0;
         gameObject.SetActive (false);
         for (int x = 0; x < 3; x++) {
             for (int i = 0; i <Drop_point.Length; i++) {
