@@ -16,11 +16,11 @@ public class LightingManager : MonoBehaviour {
         }
 
         if (Application.isPlaying) { //used to change time of day in the inspector
-            TimeOfDay += Time.deltaTime;
+            TimeOfDay += Time.deltaTime * 0.05f;
             TimeOfDay %= 24; //Clamp between 0-24
             UpdateLighting (TimeOfDay / 24f);
         } else { //if running the game build time of day changes slowly
-            TimeOfDay += Time.deltaTime * 0.1f;
+            TimeOfDay += Time.deltaTime;
             TimeOfDay %= 24; //Clamp between 0-24
             UpdateLighting (TimeOfDay / 24f);
         }
