@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,7 +28,11 @@ public class UI_Manager : MonoBehaviour {
     [Header ("Crosshair")]
     public GameObject crosshair;
 
-    [Header ("Saturation + Hleath")]
+    [Header ("Inventory Description Box")]
+    public GameObject Description_Box;
+    public TextMeshProUGUI Description_Text;
+
+    [Header ("Saturation + Health")]
     public float Health;
     public float maxHealth;
     public float Saturation;
@@ -111,6 +116,9 @@ public class UI_Manager : MonoBehaviour {
     public void CloseInventory () { //closes the invetory ui
         InventoryScreen.SetActive (false);
         InventoryOpen = false;
+
+        Description_Box.SetActive (false);
+        Description_Text.text = null;
     }
     
     public void OpenCrafting () { //opens the crafting ui

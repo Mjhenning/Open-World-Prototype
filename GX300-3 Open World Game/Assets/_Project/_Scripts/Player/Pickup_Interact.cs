@@ -11,6 +11,7 @@ public class Pickup_Interact : MonoBehaviour {
     Crafting_Table CraftingHit;
     public GameObject flamesPrefab;
     public LayerMask playermask;
+    public Vector3 DropForce;
 
     void Awake() {
         instance = this;
@@ -23,9 +24,9 @@ public class Pickup_Interact : MonoBehaviour {
         if (PlayerController.instance.input.PlayerActions.Mine.WasPressedThisFrame()) { //if left click
             if (Physics.Raycast (transform.position, transform.forward, out RaycastHit _hit, 10f, ~playermask)) {
                 Debug.Log (_hit.collider.gameObject);
-                Destroyable_Obj _item = _hit.collider.gameObject.GetComponent<Destroyable_Obj> ();
-                if (HotbarManager.instance.HotbarInventory.Container.Slots[HotbarManager.instance.CurrentSlot].item.Name == "Axe") {
-                    HitObject (_item);
+                Destroyable_Obj _tree = _hit.collider.gameObject.GetComponent<Destroyable_Obj> ();
+                if (HotbarManager.instance.HotbarInventory.Container.Slots[HotbarManager.instance.CurrentSlot].item.Name == "Axe") { //hits the tree
+                    HitObject (_tree);
                 }
             }
         }
@@ -55,6 +56,7 @@ public class Pickup_Interact : MonoBehaviour {
                 if (_item) { //if there is an item
                     Item item = new Item (_item.item); //create an item that can be added into the inventory
                     if (PlayerController.instance.Inventory.AddItem(item, 1)) { //add the item to the inventory and only if it was added
+                        Water_Behavior.instance.ItemsRb.Remove (_item.GetComponent<Rigidbody> ());
                         Destroy (_item.gameObject);//destory the item on the ground
                     }   
                 }
@@ -63,7 +65,10 @@ public class Pickup_Interact : MonoBehaviour {
     }
 
     public void Drop (ItemObject item) {  //used to set the dropped item properties and to actually drop the item infront of the player
-        GameObject _item = Instantiate (item.groundItem, DropPoint.position, Quaternion.identity, ItemsGroup.transform);
+        
+        Transform player = GetComponent<CameraController> ().player;
+        
+        GameObject _item = Instantiate (item.groundItem, DropPoint.position, transform.rotation, ItemsGroup.transform);
         _item.name = item.data.Name;
         if (!_item.GetComponent<GroundItem>()) { //if it doesn't have a grounditem script
             GroundItem _itemScript = _item.AddComponent<GroundItem> ();
@@ -74,7 +79,7 @@ public class Pickup_Interact : MonoBehaviour {
             _itemScript.OnCreate ();
             Rigidbody itemrb = _item.GetComponent<Rigidbody> ();
             itemrb.isKinematic = false;
-            itemrb.AddForce (0, 6, 6);
+            itemrb.AddRelativeForce (DropForce, ForceMode.Impulse);
         } else if (_item.GetComponent<GroundItem>()) { //if it has a grounditem script
             GroundItem _itemScript = _item.GetComponent<GroundItem> ();
             _itemScript.enabled = true;
@@ -84,7 +89,7 @@ public class Pickup_Interact : MonoBehaviour {
             _itemScript.OnCreate ();
             Rigidbody itemrb = _item.GetComponent<Rigidbody> ();
             itemrb.isKinematic = false;
-            itemrb.AddForce (0, 6, 6);
+            itemrb.AddRelativeForce (DropForce, ForceMode.Impulse);
         }
     }
     
@@ -100,7 +105,6 @@ public class Pickup_Interact : MonoBehaviour {
             _itemScript.OnCreate ();
             Rigidbody itemrb = _item.GetComponent<Rigidbody> ();
             itemrb.isKinematic = false;
-            itemrb.AddForce (0, 6, 6);
         } else if (_item.GetComponent<GroundItem>()) { //if it has a grounditem script
             GroundItem _itemScript = _item.GetComponent<GroundItem> ();
             _itemScript.enabled = true;
@@ -110,7 +114,6 @@ public class Pickup_Interact : MonoBehaviour {
             _itemScript.OnCreate ();
             Rigidbody itemrb = _item.GetComponent<Rigidbody> ();
             itemrb.isKinematic = false;
-            itemrb.AddForce (0, 6, 6);
         }
     }
 

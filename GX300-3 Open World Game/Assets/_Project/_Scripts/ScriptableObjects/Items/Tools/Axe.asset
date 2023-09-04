@@ -18,7 +18,7 @@ MonoBehaviour:
   groundItem: {fileID: 1878273237308662, guid: 17e26f001d0db364c9abac322a7fd48f, type: 3}
   type: 1
   state: 0
-  description: A basic handmade tool used to chop down trees.
+  description: A basic handmade tool, three strikes should bring a tree down.
   data:
     Name: Axe
     Id: 0

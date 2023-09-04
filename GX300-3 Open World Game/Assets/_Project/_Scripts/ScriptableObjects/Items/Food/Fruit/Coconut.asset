@@ -18,8 +18,7 @@ MonoBehaviour:
   groundItem: {fileID: 5705158636331418958, guid: f1562fbe2c169834695c36067a3d0fa2, type: 3}
   type: 0
   state: 0
-  description: A brown ball, dropped on your head from a nearby tree. Restores +5
-    heatlh & +10 Saturation on use.
+  description: A brown ball, dropped on your head from a nearby tree.
   data:
     Name: Coconut
     Id: 4
@@ -28,4 +27,3 @@ MonoBehaviour:
   FoodBurnt: {fileID: 11400000, guid: 211e4e9b0f56a8e4ea313582d72e1b69, type: 2}
   RestoreHealthValue: 5
   RestoreSaturationValue: 10
-  foodType: 0

@@ -59,11 +59,39 @@ public abstract class Player_Inventory_Interface : MonoBehaviour {
 
     public void OnEnter (GameObject obj) {
         MouseData.slotHoveredOver = obj; //adds object hovered over to the mousedata
+
+        if (MouseData.InterfaceUnderMouse.DisplayedSlots[obj].item.Id >= 0) {
+             InventorySlot _slot = MouseData.InterfaceUnderMouse.DisplayedSlots[obj]; //grabs the slot
+             
+            ItemDatabaseObject Invetorydatabase = _slot.parentInventroy.inventory.database; //grabs the database
+
+            String name = _slot.item.Name; //item name
+            String description = Invetorydatabase.Items[_slot.item.Id].description; //item description
+        
+            UI_Manager.instance.Description_Box.GetComponent<RectTransform> ().position = Input.mousePosition + new Vector3(150,0,0); //sets the rect transform pos of the description box
+            UI_Manager.instance.Description_Box.SetActive (true); //activates description box
+
+            if (Invetorydatabase.Items[_slot.item.Id] is ResourceObject _resourceObject) { //used to display resourceObject details in popup
+                UI_Manager.instance.Description_Text.text = name + Environment.NewLine + Environment.NewLine + description + Environment.NewLine + Environment.NewLine + "Current state: " + _resourceObject.state + Environment.NewLine + "Burnable: " + _resourceObject.Burnable + Environment.NewLine + Environment.NewLine + "Used in Crafting."; 
+            }
+            else if (Invetorydatabase.Items[_slot.item.Id] is FoodObject _foodObject) { //used to display foodObject details in popup
+                UI_Manager.instance.Description_Text.text = name + Environment.NewLine + Environment.NewLine + description + Environment.NewLine + Environment.NewLine + "Current state: " + _foodObject.state + Environment.NewLine + "Burnable: " + _foodObject.Burnable + Environment.NewLine + Environment.NewLine + "Used to survive." + Environment.NewLine + "Heals: " + _foodObject.RestoreHealthValue + Environment.NewLine + "Feeds: " + _foodObject.RestoreSaturationValue; 
+            }
+            else if (Invetorydatabase.Items[_slot.item.Id] is ToolsObject _toolObject) { //used to display toolObject details in popup
+                UI_Manager.instance.Description_Text.text = name + Environment.NewLine + Environment.NewLine + description + Environment.NewLine + Environment.NewLine + "Current state: " +  _toolObject.state + Environment.NewLine + "Burnable: " +  _toolObject.Burnable + Environment.NewLine + Environment.NewLine + "Used to gather.";
+
+            }
+        }
     }
     
     public void OnExit (GameObject obj) {
-        MouseData.slotHoveredOver = null; //remove object hovered over to the mousedata
+        if (obj == MouseData.slotHoveredOver) {
+            MouseData.slotHoveredOver = null; //remove object hovered over to the mousedata
+            UI_Manager.instance.Description_Box.SetActive (false); //disables description box
+            UI_Manager.instance.Description_Text.text = null;
+        }
     }
+    
     
     public void OnEnterInterface (GameObject obj) { //put in place to stop the item from being deleted when inside interface
         MouseData.InterfaceUnderMouse = obj.GetComponent<Player_Inventory_Interface> ();
@@ -75,10 +103,10 @@ public abstract class Player_Inventory_Interface : MonoBehaviour {
     
     public void OnDragStrt (GameObject obj) {
         
-        MouseData.tempItemDrag = CreateTmepItem(obj);
+        MouseData.tempItemDrag = CreateTempItem(obj);
     }
 
-    public GameObject CreateTmepItem (GameObject obj) {
+    public GameObject CreateTempItem (GameObject obj) {
         GameObject tempitem = null;
         if (DisplayedSlots[obj].item.Id >= 0) { //if item exists on inventory
             
@@ -124,6 +152,8 @@ public abstract class Player_Inventory_Interface : MonoBehaviour {
         public static GameObject tempItemDrag;
         public static GameObject slotHoveredOver;
     }
+
+
 
 public static class ExtensionMethods {
     public static void UpdateSlotDisplay (this Dictionary<GameObject, InventorySlot> _slotsOnInterface) { //used to update the displayed slots on the UI (old code)

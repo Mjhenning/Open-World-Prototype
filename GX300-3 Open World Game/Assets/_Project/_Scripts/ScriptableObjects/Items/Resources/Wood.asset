@@ -18,7 +18,8 @@ MonoBehaviour:
   groundItem: {fileID: 1493958779012120596, guid: b74e5690816c96d4d86da611559884df, type: 3}
   type: 2
   state: 0
-  description: A loose plank chopped from a nearby tree.
+  description: A loose plank chopped from a nearby tree. Could be useful as the handle
+    of a tool.
   data:
     Name: Wood
     Id: 2

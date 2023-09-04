@@ -108,7 +108,7 @@ public class HotbarManager : MonoBehaviour {
             if (UI_Manager.instance.Health < UI_Manager.instance.maxHealth || UI_Manager.instance.Saturation < UI_Manager.instance.maxSaturation || _foodItem.RestoreHealthValue < 0 || _foodItem.RestoreSaturationValue < 0) { //and health isn't max, saturation isn't max or it restores a negative value
                 _foodItem.OnUse (); //use the item
                 if (HotbarInventory.Container.Slots[CurrentSlot].itemamount >1) { //if more than ine item only take one away
-                    HotbarInventory.Container.Slots[CurrentSlot].itemamount--;
+                    HotbarInventory.Container.Slots[CurrentSlot].UpdateSlot (item.data, HotbarInventory.Container.Slots[CurrentSlot].itemamount -= 1);
                 } else if (HotbarInventory.Container.Slots[CurrentSlot].itemamount == 1) { //else delete the item out of the inventory
                     HotbarInventory.Container.Slots[CurrentSlot].RemoveItem ();
                 }

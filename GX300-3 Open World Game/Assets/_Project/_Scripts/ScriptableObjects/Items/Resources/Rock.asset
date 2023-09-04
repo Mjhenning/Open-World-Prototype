@@ -18,7 +18,7 @@ MonoBehaviour:
   groundItem: {fileID: 389741656924360060, guid: 6d7308a65791e2f458b6684e85b37e09, type: 3}
   type: 2
   state: 0
-  description: A single rock. Can be used to start fires or to craft a axe
+  description: A single rock. Could be useful as the head of an axe.
   data:
     Name: Rock
     Id: 1

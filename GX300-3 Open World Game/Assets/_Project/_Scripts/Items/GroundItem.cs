@@ -161,11 +161,16 @@ public class GroundItem : MonoBehaviour, ISerializationCallbackReceiver { //scri
     }
 
     IEnumerator TimeUntilStopBurning () { //function to stop an item from burning after 4 seconds when it exits the fire
-        yield return new WaitForSeconds (4f);
+        yield return new WaitForSeconds (8f);
         StopFire ();
     }
     void StopFire () { //used to disable flames and tell the system the object isn't on fire
         Flames.SetActive (false);
+        isOnFire = false;
+    }
+
+    public void EnteredWater () {
+        StopAllCoroutines (); //stop all the state transitions
         isOnFire = false;
     }
     

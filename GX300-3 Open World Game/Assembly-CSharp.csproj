@@ -26,7 +26,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\Assembly-CSharp\</OutputPath>
-    <DefineConstants>UNITY_2022_3_4;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_4;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
@@ -50,6 +50,7 @@
      <Compile Include="Assets\_Project\_Scripts\Inventory\Dynamic_Player_Interface.cs" />
      <Compile Include="Assets\Island\Scripts\WaterScroller.cs" />
      <Compile Include="Assets\_Project\_Scripts\Player\Pickup_Interact.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Environment\LightingManager.cs" />
      <Compile Include="Assets\Island\Scripts\FixedTiling.cs" />
      <Compile Include="Assets\_Project\_Scripts\Environment\Destroyable_Obj.cs" />
      <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Scripts\FruitObject.cs" />
@@ -63,8 +64,10 @@
      <Compile Include="Assets\_Project\_Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\_Project\_Scripts\Items\GroundItem.cs" />
      <Compile Include="Assets\Piloto Studio\Readme\Scripts\ReadmeBehaviour.cs" />
+     <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Lighting\Scripts\LightingPreset.cs" />
      <Compile Include="Assets\_Project\_Scripts\UI\UI_Manager.cs" />
      <Compile Include="Assets\_Project\_Scripts\Player\CameraController.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Environment\Water_Behavior.cs" />
      <Compile Include="Assets\_Project\_Scripts\Inventory\CraftingManager.cs" />
      <Compile Include="Assets\_Project\_Scripts\Bacgkround_Systems\SaveLoadManager.cs" />
      <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Inventory\Scripts\InventoryObject.cs" />
@@ -72,6 +75,7 @@
      <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Database\ItemDatabaseObject.cs" />
      <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Scripts\ToolsObject.cs" />
      <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Scripts\ResourceObject.cs" />
+     <Compile Include="Assets\_Project\_Scripts\Environment\Respawn_Manager.cs" />
      <Compile Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Scripts\FoodObject.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\_Project\Textures\Axe" />
@@ -85,14 +89,15 @@
      <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
      <Folder Include="Assets\Hovl Studio\Procedural fire\Materials" />
      <Folder Include="Assets\_Project\Mats" />
-     <Folder Include="Assets\laxer Assets\wood bridge\Collision Meshes\Materials" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Lighting" />
      <Folder Include="Assets\Island\Prefabs\Tree_a_Textures" />
      <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items" />
      <Folder Include="Assets\_Project\Scenes" />
      <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Inventory\Scripts" />
      <Folder Include="Assets\Piloto Studio\Shaders" />
      <None Include="Assets\Piloto Studio\Shaders\SimplyToon_Piloto\Simply Toon.shader" />
+     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Lighting\Scripts" />
      <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
      <Folder Include="Assets\_Project\Prefabs\Tools" />
      <Folder Include="Assets\_Project\Textures\SimpleNatureAssets" />
@@ -111,6 +116,7 @@
      <Folder Include="Assets\Island\Meshes" />
      <Folder Include="Assets\_Project\_Scripts\Environment" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <Folder Include="Assets\_Project\Post Processing" />
      <Folder Include="Assets\Hovl Studio\Procedural fire\Shaders" />
      <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Database" />
      <Folder Include="Assets\_Project\_Scripts\Bacgkround_Systems" />
@@ -126,13 +132,11 @@
      <Folder Include="Assets\Piloto Studio\Materials\Fire" />
      <Folder Include="Assets\Island\Scripts" />
      <Folder Include="Assets\_Project\_Scripts\ScriptableObjects" />
-     <Folder Include="Assets\laxer Assets\wood bridge\Collision Meshes" />
      <Folder Include="Assets\Island\Prefabs\Misc" />
      <Folder Include="Assets\_Project\Textures" />
      <Folder Include="Assets\Hovl Studio\Procedural fire\Textures" />
      <Folder Include="Assets\Piloto Studio\Readme" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-     <Folder Include="Assets\laxer Assets" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <Folder Include="Assets\Island\Standard" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -144,9 +148,7 @@
      <Folder Include="Assets\_Project\Prefabs\Trees" />
      <Folder Include="Assets\_Project\Prefabs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <Folder Include="Assets\laxer Assets\wood bridge\Models" />
      <Folder Include="Assets\Piloto Studio\Readme\Scripts" />
-     <Folder Include="Assets\laxer Assets\wood bridge\Models\Materials" />
      <Folder Include="Assets\LowPoly Rocks" />
      <Folder Include="Assets\Hovl Studio" />
      <Folder Include="Assets\_Project\_Scripts\InteractableItems" />
@@ -157,7 +159,6 @@
      <Folder Include="Assets\Piloto Studio\Models" />
      <Folder Include="Assets\_Project\Prefabs\Fruits" />
      <Folder Include="Assets\LowPoly Rocks\FBX" />
-     <Folder Include="Assets\laxer Assets\wood bridge\Prefabs with collision" />
      <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
      <Folder Include="Assets\TextMesh Pro\Fonts" />
      <Folder Include="Assets\Hovl Studio\Procedural fire\Prefabs" />
@@ -166,7 +167,6 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\_Project\_Scripts\Items" />
      <Folder Include="Assets\_Project\Prefabs\Resources" />
-     <Folder Include="Assets\laxer Assets\wood bridge\Textures" />
      <Folder Include="Assets\_Project\_Scripts\Player" />
      <Folder Include="Assets\PlayerPrefsEditor" />
      <Folder Include="Assets\Island\Textures\Materials" />
@@ -177,7 +177,6 @@
      <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Resources" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Food\Fish" />
-     <Folder Include="Assets\laxer Assets\wood bridge\Materials" />
      <Folder Include="Assets\_Project\Environment" />
      <None Include="Assets\Hovl Studio\Procedural fire\Shaders\FireSphere.shader" />
      <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\UberShader_Additive.shader" />
@@ -196,7 +195,6 @@
      <Folder Include="Assets\_Project\Environment\Skies" />
      <Folder Include="Assets\_Project\_Scripts" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <Folder Include="Assets\laxer Assets\wood bridge" />
      <Folder Include="Assets\TextMesh Pro\Documentation" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <Folder Include="Assets\Piloto Studio\Campfire And Torches Pack\Models" />
@@ -841,6 +839,9 @@
      <Reference Include="Unity.RenderPipelines.Universal.Runtime">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Postprocessing.Runtime">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Burst.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
      </Reference>
@@ -921,6 +922,9 @@
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Postprocessing.Editor">
+     <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>D:\Desktop\Uni Work\Game Design\GX\Open-World-GX-T3\GX300-3 Open World Game\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>

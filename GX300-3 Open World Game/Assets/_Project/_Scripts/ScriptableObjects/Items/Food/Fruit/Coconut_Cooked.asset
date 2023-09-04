@@ -18,8 +18,7 @@ MonoBehaviour:
   groundItem: {fileID: 5705158636331418958, guid: 3ded785abcf162f4a9eabf6f34f81b9b, type: 3}
   type: 0
   state: 1
-  description: A Brown ball cooked to a dark brown color.Restores +10 heatlh & +20
-    Saturation on use.
+  description: A Brown ball cooked to a dark brown color.
   data:
     Name: Cooked Cocnut
     Id: 6

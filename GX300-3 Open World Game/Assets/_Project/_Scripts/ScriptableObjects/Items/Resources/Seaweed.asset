@@ -18,7 +18,8 @@ MonoBehaviour:
   groundItem: {fileID: 8903058273634794869, guid: f1fc5bb90ac285e4486771552d63bcb8, type: 3}
   type: 2
   state: 0
-  description: A green slimey object found in and nearby water pools.
+  description: A green slimey object found in and nearby water pools. Maybe it could
+    be used to bind stuff together?
   data:
     Name: Seaweed
     Id: 3

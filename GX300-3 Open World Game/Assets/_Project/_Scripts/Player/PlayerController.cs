@@ -63,6 +63,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     void FixedUpdate () {
+        
+        rb.AddForce(Physics.gravity * rb.mass);
+        
         if (!UI_Manager.instance.InventoryOpen || !UI_Manager.instance.CraftingOpen || !UI_Manager.instance.GamePaused) { //player can only move if the inventory isn't currently open
             rb.freezeRotation = false;
             Vector2 MoveInput = input.PlayerActions.Movement.ReadValue<Vector2>();

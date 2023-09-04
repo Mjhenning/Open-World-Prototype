@@ -18,8 +18,7 @@ MonoBehaviour:
   groundItem: {fileID: 5705158636331418958, guid: cc7b6c5d5c5e404479128d4b1e78817d, type: 3}
   type: 0
   state: 2
-  description: A black charred ball, doesn't seem very health to eat. Restores -
-    20 Health and +2 saturation on use
+  description: A black charred ball, doesn't seem very health to eat.
   data:
     Name: Burnt Coconut
     Id: 5
