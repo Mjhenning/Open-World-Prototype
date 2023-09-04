@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour {
     public Player_Input input; //used to access player_input actionmap
     
     void Awake () {
+        
         instance = this;
         input = new Player_Input ();
     }
@@ -117,6 +118,8 @@ public class PlayerController : MonoBehaviour {
         Inventory.Container.Clear();
         Hotbar.Container.Clear();
     }
+    
+    
 }
     
 

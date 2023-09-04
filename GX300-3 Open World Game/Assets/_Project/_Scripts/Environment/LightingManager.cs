@@ -15,7 +15,7 @@ public class LightingManager : MonoBehaviour {
             return;
         }
 
-        if (Application.isPlaying) {
+        if (Application.isPlaying) { //used to change time of day in the inspector
             TimeOfDay += Time.deltaTime * 0.1f;
             TimeOfDay %= 24; //Clamp between 0-24
             UpdateLighting (TimeOfDay / 24f);

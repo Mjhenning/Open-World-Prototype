@@ -15,8 +15,6 @@ public class GroundItem : MonoBehaviour, ISerializationCallbackReceiver { //scri
     public bool isOnFire;
     public bool inFire;
 
-    bool CalledStopBurning = false;
-
     public void OnBeforeSerialize () { //Used to change mesh, material and collider mesh of the ground item based on assigned item.
 #if UNITY_EDITOR        
         GetComponent<MeshFilter>().mesh = item.groundItem.GetComponent<MeshFilter>().sharedMesh;
@@ -140,7 +138,6 @@ public class GroundItem : MonoBehaviour, ISerializationCallbackReceiver { //scri
         if (item.Burnable) { //and this item is burnable
             StopAllCoroutines (); //stop all the state transitions
             StartCoroutine (TimeUntilStopBurning ()); //and start the coroutine to disable the fire
-            CalledStopBurning = true;
         }
     }
 
@@ -179,7 +176,6 @@ public class GroundItem : MonoBehaviour, ISerializationCallbackReceiver { //scri
     void StopFire () { //used to disable flames and tell the system the object isn't on fire
         Flames.SetActive (false);
         isOnFire = false;
-        CalledStopBurning = false;
     }
 
     public void EnteredWater () {

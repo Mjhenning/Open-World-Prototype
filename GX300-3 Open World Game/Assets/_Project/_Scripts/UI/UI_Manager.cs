@@ -151,6 +151,8 @@ public class UI_Manager : MonoBehaviour {
         GameOverMenu.SetActive (false);
         EscapeMenu.SetActive (false);
         GamePaused = false;
+        PlayerController.instance.Inventory.Container.Clear(); //clears out inventory
+        PlayerController.instance.Hotbar.Container.Clear(); //clears out hotbar inventory
         SceneManager.LoadScene ("Main_Scene");
     }
 
