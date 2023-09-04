@@ -73,7 +73,7 @@ PrefabInstance:
       addedObject: {fileID: 305}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 532788c369e551d44a067aa3c8bb182c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 368}
+      addedObject: {fileID: 369}
   m_SourcePrefab: {fileID: 100100000, guid: 532788c369e551d44a067aa3c8bb182c, type: 3}
 --- !u!1 &389741656924360060 stripped
 GameObject:
@@ -107,7 +107,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &368
+--- !u!114 &369
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,6 +122,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 87ed672788400c74a9a3fd18c69091eb, type: 2}
   currentstate: 0
   FlamesPrefab: {fileID: 0}
+  FlamesLight: {fileID: 0}
   Flames: {fileID: 0}
   isOnFire: 0
   inFire: 0

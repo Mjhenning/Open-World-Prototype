@@ -256,6 +256,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: a69d6c7a4ea7d7e48a1e284929b48e0b, type: 2}
   currentstate: 0
   FlamesPrefab: {fileID: 1725317912486240, guid: e55149ba6f4d00741984987e258c3378, type: 3}
+  FlamesLight: {fileID: 0}
   Flames: {fileID: 0}
   isOnFire: 0
   inFire: 0

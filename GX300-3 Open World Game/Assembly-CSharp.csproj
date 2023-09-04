@@ -104,7 +104,6 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <Folder Include="Assets\_Project\Mesh" />
      <Folder Include="Assets\_Project\Textures\Planks" />
-     <Folder Include="Assets\_Project\Environment\Skies\Materials" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <Folder Include="Assets\Piloto Studio\Campfire And Torches Pack\Prefabs" />
      <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Food" />
@@ -176,7 +175,6 @@
      <Folder Include="Assets\_Project\Textures\Table 2\HDRP URP" />
      <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Resources" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <Folder Include="Assets\_Project\_Scripts\ScriptableObjects\Items\Food\Fish" />
      <Folder Include="Assets\_Project\Environment" />
      <None Include="Assets\Hovl Studio\Procedural fire\Shaders\FireSphere.shader" />
      <None Include="Assets\Piloto Studio\Shaders\VFX_Piloto\UberShader_Additive.shader" />

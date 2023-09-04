@@ -10,9 +10,12 @@ public class GroundItem : MonoBehaviour, ISerializationCallbackReceiver { //scri
     public ItemObject item;
     public ItemState currentstate;
     public GameObject FlamesPrefab;
+    public Light FlamesLight;
     public GameObject Flames;
     public bool isOnFire;
     public bool inFire;
+
+    bool CalledStopBurning = false;
 
     public void OnBeforeSerialize () { //Used to change mesh, material and collider mesh of the ground item based on assigned item.
 #if UNITY_EDITOR        
@@ -35,7 +38,15 @@ public class GroundItem : MonoBehaviour, ISerializationCallbackReceiver { //scri
     public void OnCreate () { //if the item is burnable instantiate the flames prefab on this item and deactivate it
         if (item.Burnable) {
             Flames = Instantiate(FlamesPrefab,transform.position,quaternion.identity,transform);
-            Flames.SetActive (false); 
+            Flames.SetActive (false);
+            FlamesLight = Flames.AddComponent<Light> (); //add a light to the fire effect
+            
+            //Light settings
+            FlamesLight.type = LightType.Point;
+            FlamesLight.intensity = .5f;
+            FlamesLight.range = 4f;
+            FlamesLight.color = new Color (255 /255f, 146 /255f, 0, 255);
+            FlamesLight.shadows = LightShadows.Hard;
         }
 
         UpdateState (); //also update the current item's state
@@ -129,6 +140,7 @@ public class GroundItem : MonoBehaviour, ISerializationCallbackReceiver { //scri
         if (item.Burnable) { //and this item is burnable
             StopAllCoroutines (); //stop all the state transitions
             StartCoroutine (TimeUntilStopBurning ()); //and start the coroutine to disable the fire
+            CalledStopBurning = true;
         }
     }
 
@@ -167,11 +179,11 @@ public class GroundItem : MonoBehaviour, ISerializationCallbackReceiver { //scri
     void StopFire () { //used to disable flames and tell the system the object isn't on fire
         Flames.SetActive (false);
         isOnFire = false;
+        CalledStopBurning = false;
     }
 
     public void EnteredWater () {
         StopAllCoroutines (); //stop all the state transitions
         isOnFire = false;
     }
-    
 }
